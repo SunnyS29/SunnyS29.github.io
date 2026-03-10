@@ -85,7 +85,7 @@
           });
         });
       },
-      { threshold: 0.2, rootMargin: "-20% 0px -50% 0px" }
+      { threshold: 0, rootMargin: "-45% 0px -45% 0px" }
     );
 
     sections.forEach((section) => sectionObserver.observe(section));
