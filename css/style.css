@@ -540,6 +540,31 @@ ul {
   min-height: 100%;
 }
 
+.project-card-featured {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-feature-copy {
+  max-width: none;
+}
+
+.project-feature-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(129, 140, 248, 0.08);
+  border: 1px solid rgba(129, 140, 248, 0.16);
+  color: var(--accent-bright);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .project-card:hover,
 .timeline-content:hover,
 .education-card:hover,
