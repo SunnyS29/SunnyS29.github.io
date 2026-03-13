@@ -12,14 +12,14 @@
 
 :root {
   --bg: #0c0a09;
-  --surface: #171412;
+  --surface: #1e1b19;
   --surface-strong: #1c1917;
-  --surface-hover: #292524;
-  --border: #292524;
+  --surface-hover: #2d2926;
+  --border: #36312e;
   --border-soft: #1c1917;
   --border-hover: #f59e0b;
-  --text: #fafaf9;
-  --text-muted: #a8a29e;
+  --text: #ffffff;
+  --text-muted: #c8c2bc;
   --accent: #d97706;
   --accent-bright: #f59e0b;
   --accent-glow: rgba(245, 158, 11, 0.15);
@@ -40,8 +40,10 @@ html {
 body {
   font-family: var(--font-body);
   background-color: var(--bg);
-  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-  background-size: 24px 24px;
+  background-image:
+    radial-gradient(circle at top center, rgba(245, 158, 11, 0.08) 0%, transparent 60%),
+    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 100% 100%, 24px 24px;
   color: var(--text);
   line-height: 1.7;
   font-size: 15px;
