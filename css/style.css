@@ -449,6 +449,18 @@ ul {
   gap: 24px;
 }
 
+.project-group + .project-group {
+  margin-top: 40px;
+}
+
+.project-group-label {
+  margin-bottom: 18px;
+  color: var(--accent-bright);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
