@@ -410,6 +410,8 @@ ul {
   padding: 32px;
   transition: all 0.3s var(--ease);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card::before,
@@ -462,8 +464,6 @@ ul {
 }
 
 .project-card {
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
 }
 
