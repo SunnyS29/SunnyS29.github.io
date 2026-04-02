@@ -467,6 +467,12 @@ ul {
   min-height: 100%;
 }
 
+.project-card-featured {
+  background:
+    linear-gradient(180deg, rgba(245, 158, 11, 0.08), transparent 40%),
+    var(--surface);
+}
+
 .project-feature-badge {
   display: inline-flex;
   align-items: center;
@@ -514,6 +520,90 @@ ul {
 
 .project-link:hover {
   border-bottom-color: var(--accent-bright);
+}
+
+.dashboard-shell {
+  background:
+    linear-gradient(180deg, rgba(245, 158, 11, 0.06), transparent 28%),
+    var(--surface-strong);
+  border: 1px solid var(--border);
+  border-radius: var(--section-radius);
+  padding: 32px;
+  display: grid;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top right, rgba(245, 158, 11, 0.1), transparent 30%);
+  pointer-events: none;
+}
+
+.dashboard-header,
+.dashboard-frame-card,
+.dashboard-actions {
+  position: relative;
+  z-index: 1;
+}
+
+.dashboard-heading {
+  margin-bottom: 24px;
+}
+
+.dashboard-intro {
+  max-width: 760px;
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.dashboard-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.dashboard-stats span {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: var(--section-radius);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  background: rgba(245, 158, 11, 0.08);
+  color: var(--accent-bright);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dashboard-frame-card {
+  border: 1px solid #3f3936;
+  background: rgba(12, 10, 9, 0.7);
+  padding: 16px;
+}
+
+.dashboard-embed {
+  display: block;
+  width: 100%;
+  height: clamp(620px, 80vh, 860px);
+  border: 0;
+  background: #120f0d;
+}
+
+.dashboard-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.dashboard-note {
+  color: var(--text-muted);
+  font-size: 13px;
 }
 
 .timeline {
@@ -744,6 +834,19 @@ button:focus-visible {
 
   .section {
     padding: 60px 0;
+  }
+
+  .dashboard-shell {
+    padding: 24px;
+  }
+
+  .dashboard-frame-card {
+    padding: 10px;
+  }
+
+  .dashboard-embed {
+    height: 70vh;
+    min-height: 560px;
   }
 
   .nav-links {
