@@ -625,27 +625,31 @@ ul {
 }
 
 .certifications {
-  margin-top: 48px;
-  scroll-margin-top: var(--nav-height);
+  margin-top: 80px;
+  padding-top: 48px;
+  border-top: 1px solid var(--border);
+  scroll-margin-top: calc(var(--nav-height) + 24px);
 }
 
 .certifications-heading {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 28px;
 }
 
 .certification-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
   list-style: none;
 }
 
 .certification-item {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px 24px;
-  padding: 20px 0;
-  border-top: 1px solid var(--border);
+  min-width: 0;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--section-radius);
 }
 
 .certification-item > div {
@@ -654,26 +658,63 @@ ul {
 
 .certification-title {
   font-family: var(--font-heading);
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 1.45;
   color: var(--text);
+  margin-bottom: 10px;
   overflow-wrap: anywhere;
 }
 
-.certification-issuer,
-.certification-date {
+.certification-issuer {
   color: var(--text-muted);
   font-size: 14px;
+  line-height: 1.6;
+}
+
+.certification-date {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+.certification-item-progress {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: var(--surface-strong);
 }
 
 .certification-status {
-  font-size: 13px;
+  flex-shrink: 0;
+  padding: 5px 12px;
+  font-size: 12px;
   color: var(--accent-bright);
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: var(--section-radius);
 }
 
-.certification-status {
-  padding: 4px 10px;
-  border: 1px solid var(--border);
-  border-radius: var(--section-radius);
+@media (max-width: 640px) {
+  .certifications {
+    margin-top: 48px;
+    padding-top: 32px;
+  }
+
+  .certifications-heading {
+    font-size: 24px;
+  }
+
+  .certification-list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .certification-item {
+    padding: 24px;
+  }
 }
 
 .skills-compact {
