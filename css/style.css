@@ -718,21 +718,20 @@ ul {
 }
 
 .skills-compact {
-  margin-top: 40px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--section-radius);
-  padding: 24px;
+  max-width: 760px;
+  margin-top: 32px;
   font-size: 14px;
+  line-height: 1.8;
   color: var(--text-muted);
 }
 
+.skills-compact p + p {
+  margin-top: 8px;
+}
+
 .skills-compact strong {
-  color: var(--accent-bright);
-  display: block;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  color: var(--text);
+  font-weight: 600;
 }
 
 .contact-panel {
