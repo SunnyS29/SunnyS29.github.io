@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunny Sangar | Data, Bioinformatics, and Useful Tools</title>
-  <meta name="description" content="Sunny Sangar is based in Melbourne and works across data, bioinformatics, and practical problem-solving. Python, SQL, Tableau, and tools built to be genuinely useful.">
+  <title>Sunny Sangar | Bioinformatics, Data &amp; Scientific Software</title>
+  <meta name="description" content="Bioinformatics and data portfolio of Sunny Sangar, featuring computational biology, scientific software and data-analysis projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sunny Sangar | Bioinformatics, Data &amp; Scientific Software">
+  <meta property="og:description" content="Bioinformatics and data portfolio of Sunny Sangar, featuring computational biology, scientific software and data-analysis projects.">
+  <meta property="og:url" content="https://sunnysangar.com/">
+  <meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260909-skills">
+  <link rel="stylesheet" href="css/style.css?v=20260909-punchlist">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='4' fill='%230c0a09'/><text y='68' x='50' text-anchor='middle' font-family='Syne,sans-serif' font-weight='800' font-size='44' fill='%23f59e0b'>S</text></svg>">
 </head>
 <body>
@@ -16,7 +21,7 @@
     <div class="nav-inner">
       <div class="nav-brand-block">
         <a href="#hero" class="nav-logo">Sunny Sangar.</a>
-        <span class="nav-tagline">Bioinformatics / Data / Tools</span>
+        <span class="nav-tagline">Science / Data / Software</span>
       </div>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
         <span></span>
@@ -45,6 +50,7 @@
       </div>
       <div class="hero-cta animate-in delay-4">
         <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="assets/Sunny_Sangar_CV.pdf" class="btn btn-outline" download>Download CV</a>
         <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
     </div>
@@ -59,13 +65,12 @@
       <p class="section-label reveal">Profile</p>
       <h2 class="section-heading reveal">About</h2>
       <div class="about-text reveal">
-        <p>I work across data, technical problem-solving, and building tools that are actually useful. My background is in Bioinformatics, but what draws me in is practical problems where the solution has to work, whether that's genomic pipelines, sales dashboards, or a browser extension I built because I needed it myself.</p>
-        <p>I like figuring things out. If something isn't working I'd rather dig into it than work around it, and I tend to keep going until I find an answer that makes sense. I use whatever tool fits the job and care more about getting it right than getting it done quickly.</p>
-        <p>Outside of work I'm into cycling, tennis, fantasy books, and reading about aging biology and biomarker tracking. Usually have a side project on the go.</p>
+        <p>I work across data, technical problem-solving, and building tools that are actually useful. My background is in biology, but what draws me in is practical problems where the solution has to work, whether that's an imaging pipeline, a sales dashboard, or a browser extension I built because I needed it myself.</p>
+        <p>I like figuring things out. If something isn't working I'd rather dig into it than work around it, and I use whatever tool fits the job. Outside of work I'm into cycling, tennis, fantasy books, and reading about aging biology and biomarker tracking. Usually have a side project on the go.</p>
       </div>
       <div class="skills-compact reveal delay-1">
         <p><strong>Tools:</strong> Python, SQL, R, JavaScript, MATLAB, Tableau</p>
-        <p><strong>Focus:</strong> Bioinformatics, data visualisation, workflow automation</p>
+        <p><strong>Focus:</strong> Computational biology, data visualisation, workflow automation</p>
       </div>
     </div>
   </section>
@@ -80,22 +85,28 @@
           <article class="project-card">
             <span class="project-kicker">MATLAB / Neuroscience</span>
             <h3 class="project-title">CalcCatch</h3>
-            <p class="project-desc">Region-of-interest detection tool for calcium imaging data. Takes raw neuroscience imaging datasets, identifies active cell regions automatically, and outputs structured results that would otherwise require manual annotation.</p>
-            <a href="https://github.com/SunnyS29/CalcCatch" target="_blank" rel="noopener" class="project-link">View Project</a>
+            <p class="project-desc">Developed for my MSc research to automate region-of-interest detection in calcium imaging data. Takes raw neuroscience imaging datasets, identifies active cell regions automatically, and outputs structured results that would otherwise require months of manual annotation. Roughly doubled the detection accuracy of the standard toolbox.</p>
+            <div class="project-links">
+              <a href="https://github.com/SunnyS29/CalcCatch" target="_blank" rel="noopener" class="project-link">View Project</a>
+            </div>
           </article>
 
           <article class="project-card">
             <span class="project-kicker">Python / Molecular Diagnostics</span>
             <h3 class="project-title">Aptamer Pipeline</h3>
-            <p class="project-desc">Python pipeline for identifying candidate aptamers (short DNA sequences that bind to specific targets) from raw HT-SELEX sequencing data. Scores sequences by enrichment trajectory across rounds rather than single-snapshot abundance, which avoids picking sequences that look good once but don't hold up.</p>
-            <a href="https://github.com/SunnyS29/aptamer_test_repo" target="_blank" rel="noopener" class="project-link">View Project</a>
+            <p class="project-desc">Python pipeline for identifying candidate aptamers (short DNA sequences that bind to specific targets, used in diagnostics and biosensors) from raw HT-SELEX sequencing data. Tracks how promising sequences change across selection rounds, helping avoid candidates that only look strong at a single point.</p>
+            <div class="project-links">
+              <a href="https://github.com/SunnyS29/aptamer_test_repo" target="_blank" rel="noopener" class="project-link">View Project</a>
+            </div>
           </article>
 
           <article class="project-card">
             <span class="project-kicker">Python / Bioinformatics / Microbial Ecology</span>
             <h3 class="project-title">Sourdough Microbial Networks</h3>
             <p class="project-desc">Can microbes found together in sourdough actually coexist? Benchmarks seven methods using microbial sequencing data from 500 starters against 28 lab experiments. A reproducible Python analysis that tests how well statistical predictions hold up against experimental evidence.</p>
-            <a href="https://github.com/SunnyS29/sourdough-network-benchmark" target="_blank" rel="noopener" class="project-link">View Project</a>
+            <div class="project-links">
+              <a href="https://github.com/SunnyS29/sourdough-network-benchmark" target="_blank" rel="noopener" class="project-link">View Project</a>
+            </div>
           </article>
         </div>
       </div>
@@ -106,39 +117,33 @@
           <article class="project-card project-card-featured">
             <span class="project-kicker">DuckDB WASM / JavaScript / Public Data</span>
             <h3 class="project-title">Melbourne Cyclist Crash Explorer</h3>
-            <p class="project-desc">Browser-only crash-data explorer that lets users ask plain-English questions about Melbourne cyclist safety. Runs SQL against a static Parquet file entirely in the browser, with direct answers, charts, and raw table output.</p>
-            <a href="https://sunnys29.github.io/cyclist-crash-explorer/" target="_blank" rel="noopener" class="project-link">Live Demo</a>
-            <a href="https://github.com/SunnyS29/cyclist-crash-explorer" target="_blank" rel="noopener" class="project-link">View Code</a>
+            <p class="project-desc">Browser-only explorer that lets you ask plain-English questions about 15,485 Melbourne cyclist crashes from 2012 to 2025. Runs SQL against a static Parquet file entirely in the browser, with direct answers, charts, and raw table output.</p>
+            <div class="project-links">
+              <a href="https://sunnys29.github.io/cyclist-crash-explorer/" target="_blank" rel="noopener" class="project-link">Live Demo</a>
+              <a href="https://github.com/SunnyS29/cyclist-crash-explorer" target="_blank" rel="noopener" class="project-link">View Code</a>
+            </div>
           </article>
 
-          <article class="project-card">
-            <span class="project-kicker">Metabase / SQL / Public Data</span>
-            <h3 class="project-title">Melbourne Cycling Safety Dashboard</h3>
-            <p class="project-desc">Built from curiosity about the routes I already ride, this Metabase dashboard uses VicRoads crash data and City of Melbourne infrastructure records to break down 13 years of cyclist crashes by time, location, and local area. Live dashboard viewable on request.</p>
-            <a href="assets/melbourne-cyclist-safety-dashboard-demo.mp4" target="_blank" rel="noopener" class="project-link">Watch Demo</a>
-          </article>
 
           <article class="project-card">
             <span class="project-kicker">Browser Extension / JavaScript</span>
             <h3 class="project-title">BGG Price Compare AU</h3>
             <p class="project-desc">Built because I needed it myself, this browser extension compares Australian board game prices directly on BoardGameGeek pages to make local price checking faster.</p>
-            <a href="https://chromewebstore.google.com/detail/bgg-price-compare-au/gjigggonhdkmiachkpkpcefldfenjann" target="_blank" rel="noopener" class="project-link">View on Chrome</a>
-            <a href="https://addons.mozilla.org/en-US/firefox/addon/bgg-price-compare-au/" target="_blank" rel="noopener" class="project-link">View on Firefox</a>
+            <div class="project-links">
+              <a href="https://chromewebstore.google.com/detail/bgg-price-compare-au/gjigggonhdkmiachkpkpcefldfenjann" target="_blank" rel="noopener" class="project-link">View on Chrome</a>
+              <a href="https://addons.mozilla.org/en-US/firefox/addon/bgg-price-compare-au/" target="_blank" rel="noopener" class="project-link">View on Firefox</a>
+            </div>
           </article>
 
           <article class="project-card">
             <span class="project-kicker">React / Decision Framework</span>
             <h3 class="project-title">VERDICT</h3>
-            <p class="project-desc">Standalone decision tool built to tackle buying decision paralysis. Uses AHP pairwise weighting, TOPSIS ranking, minimax regret, and sensitivity analysis to compare options without AI or external APIs.</p>
-            <a href="https://sunnysangar.com/VERDICT/index" target="_blank" rel="noopener" class="project-link">Live Demo</a>
+            <p class="project-desc">Standalone decision tool built to tackle buying decision paralysis. Compares options using several decision-making methods and shows how changes in your priorities affect the result. No AI or external APIs.</p>
+            <div class="project-links">
+              <a href="https://sunnysangar.com/VERDICT/index" target="_blank" rel="noopener" class="project-link">Live Demo</a>
+            </div>
           </article>
 
-          <article class="project-card">
-            <span class="project-kicker">Python / Data Analysis [ONGOING]</span>
-            <h3 class="project-title">Programming Subreddit Analysis</h3>
-            <p class="project-desc">Analysing growth and engagement patterns across six programming subreddits to understand how AI tools shifted engagement with learning programming. Pending Reddit API access.</p>
-            <a href="https://github.com/SunnyS29/Reddit-Subreddit-Analysis" target="_blank" rel="noopener" class="project-link">View Project</a>
-          </article>
         </div>
       </div>
     </div>
@@ -156,7 +161,7 @@
               <h3>Data Analyst</h3>
               <span class="timeline-company">Desire International Ltd, Hong Kong</span>
             </div>
-            <span class="timeline-date">Nov 2022 - July 2026</span>
+            <span class="timeline-date">Nov 2022 – Jul 2026</span>
             <ul class="timeline-details">
               <li>Analysed sales, pricing, and product data using SQL, Python, and Excel to identify patterns, delivering weekly reports to 5-6 stakeholders across Sales and Marketing to support commercial decisions.</li>
               <li>Built dashboards and automated reporting workflows that cut report turnaround from around 3 hours to under 2, reducing delays by 40% and making recurring analysis faster and more reliable.</li>
@@ -172,11 +177,10 @@
               <h3>Sports Officer</h3>
               <span class="timeline-company">International House, Melbourne</span>
             </div>
-            <span class="timeline-date">Feb — Jul 2025</span>
+            <span class="timeline-date">Feb 2025 – Jul 2025</span>
             <ul class="timeline-details">
               <li>Coordinated logistics and equipment for community sports events to keep delivery organised and running smoothly.</li>
               <li>Managed sports inventory and event setup in a busy residential college environment.</li>
-              <li>Supported the planning and delivery of sports activities through practical, day-to-day coordination.</li>
             </ul>
           </div>
         </div>
@@ -187,7 +191,7 @@
               <h3>Data Research Assistant</h3>
               <span class="timeline-company">Ark Global, Hong Kong</span>
             </div>
-            <span class="timeline-date">Jun 2021 - Sep 2021</span>
+            <span class="timeline-date">Jun 2021 – Sep 2021</span>
             <ul class="timeline-details">
               <li>Analysed market data in Python and Excel to identify demand patterns and turn raw data into usable reporting for procurement and inventory decisions.</li>
               <li>Built automated pipelines to consolidate data from multiple sources, saving around 3 hours of manual preparation time per cycle and improving consistency across reporting outputs.</li>
@@ -206,9 +210,9 @@
         <article class="education-card reveal">
           <div class="education-degree">Master of Science (Bioinformatics)</div>
           <div class="education-school">University of Melbourne</div>
-          <div class="education-date">2023 - 2025</div>
+          <div class="education-date">2023 – 2025</div>
           <ul class="education-details">
-            <li>Thesis: Applied statistical modelling and network analysis to large time-series datasets.</li>
+            <li>Thesis: Reconstructed neuronal network connectivity from enteric nervous system calcium-imaging recordings using graph theory, transfer entropy, and statistical modelling. Thesis mark: 89%.</li>
             <li>Key Coursework: Machine Learning, Database Systems, Advanced Programming, Statistical Analysis.</li>
           </ul>
         </article>
@@ -216,10 +220,10 @@
         <article class="education-card reveal delay-1">
           <div class="education-degree">Bachelor of Science (Bioinformatics)</div>
           <div class="education-school">University of Dundee</div>
-          <div class="education-date">2018 - 2022</div>
+          <div class="education-date">2018 – 2022</div>
           <ul class="education-details">
             <li>Biochemistry and statistics coursework with a strong focus on modelling complex biological data.</li>
-            <li>Used SQL to maintain and handle large databases of proteomic data</li>
+            <li>Used SQL to manage and query proteomic datasets.</li>
           </ul>
         </article>
       </div>
@@ -241,26 +245,19 @@
               <p class="certification-date">Completed November 2022</p>
             </div>
           </li>
-          <li class="certification-item reveal">
+          <li class="certification-item certification-item-minor reveal">
             <div>
               <h4 class="certification-title">Building with the Claude API</h4>
               <p class="certification-issuer">Anthropic</p>
               <p class="certification-date">Completed May 2026</p>
             </div>
           </li>
-          <li class="certification-item reveal">
+          <li class="certification-item certification-item-minor reveal">
             <div>
               <h4 class="certification-title">Claude Code in Action</h4>
               <p class="certification-issuer">Anthropic</p>
               <p class="certification-date">Completed May 2026</p>
             </div>
-          </li>
-          <li class="certification-item certification-item-progress reveal">
-            <div>
-              <h4 class="certification-title">AWS Cloud Practitioner</h4>
-              <p class="certification-issuer">Amazon Web Services</p>
-            </div>
-            <span class="certification-status">In progress</span>
           </li>
         </ul>
       </div>
@@ -270,7 +267,7 @@
   <section class="section glass-section" id="contact">
     <div class="container">
       <p class="section-label reveal">Connect</p>
-      <h2 class="section-heading reveal">Open to roles or collaborations.</h2>
+      <h2 class="section-heading reveal">Interested in bioinformatics, health data, and research-focused roles.</h2>
       <div class="contact-panel reveal delay-1">
         <a href="https://www.linkedin.com/in/sunny-sangar-290476180/" target="_blank" rel="noopener" class="contact-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" aria-hidden="true">
@@ -292,6 +289,14 @@
             <path d="M16.5 3.5a2.121 2.121 0 113 3L7 19l-4 1 1-4 12.5-12.5z"/>
           </svg>
           Email Me · sunnysangar29@gmail.com
+        </a>
+        <a href="assets/Sunny_Sangar_CV.pdf" class="contact-link" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" aria-hidden="true">
+            <path d="M12 3v12"/>
+            <path d="M7 10l5 5 5-5"/>
+            <path d="M4 19h16"/>
+          </svg>
+          Download CV (PDF)
         </a>
         <p class="contact-location">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" aria-hidden="true">
