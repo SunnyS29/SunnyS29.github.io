@@ -500,7 +500,7 @@ ul {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
   gap: 20px;
 }
 
@@ -511,6 +511,12 @@ ul {
 
 .project-card:hover {
   border-color: var(--line-strong);
+}
+
+/* with two columns, the featured box and any leftover box run full width */
+.project-card-featured,
+.projects-grid:not(:has(.project-card-featured)) .project-card:first-child {
+  grid-column: 1 / -1;
 }
 
 /* featured project: a double-line box, like ╔═╗ box drawing */
