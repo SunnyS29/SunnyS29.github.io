@@ -12,151 +12,176 @@
   <meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260909-punchlist">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='4' fill='%230c0a09'/><text y='68' x='50' text-anchor='middle' font-family='Syne,sans-serif' font-weight='800' font-size='44' fill='%23f59e0b'>S</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20261125e">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23100d0a'/><text y='66' x='12' font-family='monospace' font-weight='700' font-size='52' fill='%23ffb000'>&gt;_</text></svg>">
 </head>
 <body>
+  <a href="#about" class="skip-link">Skip to content</a>
+
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <div class="nav-brand-block">
-        <a href="#hero" class="nav-logo">Sunny Sangar.</a>
-        <span class="nav-tagline">Science / Data / Software</span>
-      </div>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <a href="#hero" class="nav-logo" aria-label="Back to top">Sunny Sangar</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">menu</button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+        <li><a href="#about">about/</a></li>
+        <li><a href="#projects">projects/</a></li>
+        <li><a href="#hobbies">hobbies/</a></li>
+        <li><a href="#experience">work/</a></li>
+        <li><a href="#education">edu/</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
     </div>
   </nav>
 
+  <main>
   <section class="hero" id="hero">
     <div class="hero-content">
-      <p class="hero-greeting animate-in">Introduction</p>
-      <h1 class="hero-name text-gradient animate-in delay-1">Hi, I'm<br>Sunny Sangar.</h1>
-      <p class="hero-tagline animate-in delay-2">Data analysis and bioinformatics.</p>
-      <p class="hero-sub animate-in delay-3">I'm a data analyst with a background in biology and a Master's in Bioinformatics. I like using data to explore questions that interest me, from microbial communities to cycling safety, and building tools I can use myself.</p>
-      <div class="hero-meta animate-in delay-3">
-        <span>Melbourne, AU</span>
-        <span>Incoming PhD Researcher</span>
+      <div class="term-window animate-in">
+        <div class="term-bar" aria-hidden="true">
+          <span class="term-dots"><i></i><i></i><i></i></span>
+          <span class="term-title">sunnysangar.com</span>
+        </div>
+        <div class="term-body">
+          <h1 class="hero-name">Sunny Sangar</h1>
+          <p class="hero-tagline">data analyst &middot; researcher &middot; tinkerer</p>
+
+          <p class="hero-sub">Bioinformatician heading into a PhD. I work on biological data from neurons to microbes and build tools when the right one doesn't exist.</p>
+
+          <ul class="hero-meta">
+            <li><span class="key">location</span> Melbourne, AU</li>
+          </ul>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View projects</a>
+            <a href="assets/Sunny_Sangar_CV.pdf?v=2" class="btn btn-outline" download="Sunny_Sangar_CV.pdf">Download CV</a>
+            <a href="#contact" class="btn btn-outline">Email me</a>
+          </div>
+        </div>
       </div>
-      <div class="hero-cta animate-in delay-4">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="assets/Sunny_Sangar_CV.pdf?v=2" class="btn btn-outline" download="Sunny_Sangar_CV.pdf">Download CV</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="hero-scroll-line"></div>
     </div>
   </section>
 
-  <section class="section glass-section" id="about">
+  <section class="section" id="about">
     <div class="container">
-      <p class="section-label reveal">Profile</p>
       <h2 class="section-heading reveal">About</h2>
       <div class="about-text reveal">
-        <p>I work across data, technical problem-solving, and building tools that are actually useful. My background is in biology, but what draws me in is practical problems where the solution has to work, whether that's an imaging pipeline, a sales dashboard, or a browser extension I built because I needed it myself.</p>
-        <p>I like figuring things out. If something isn't working I'd rather dig into it than work around it, and I use whatever tool fits the job. Outside of work I'm into cycling, tennis, fantasy books, and reading about aging biology and biomarker tracking. Usually have a side project on the go.</p>
+        <p>I started out in biochemistry before life introduced me to bioinformatics. Since then I've expanded into a wider range of data analysis. What draws me in is practical problems where the answer has to actually work. That could be an imaging pipeline or a tool for digging through Melbourne's bike crash data.</p>
+        <p>If something isn't working I'd rather dig into it than work around it. I usually have a side project on the go.</p>
       </div>
-      <div class="skills-compact reveal delay-1">
-        <p><strong>Tools:</strong> Python, SQL, R, JavaScript, MATLAB, Tableau</p>
-        <p><strong>Focus:</strong> Computational biology, data visualisation, workflow automation</p>
-      </div>
+      <dl class="skills-compact reveal delay-1">
+        <div><dt>tools</dt><dd>Python, SQL, R, JavaScript, MATLAB, Tableau</dd></div>
+        <div><dt>focus</dt><dd>Computational biology, data visualisation, workflow automation</dd></div>
+      </dl>
     </div>
   </section>
 
   <section class="section" id="projects">
     <div class="container">
-      <p class="section-label reveal">Selected Work</p>
       <h2 class="section-heading reveal">Projects</h2>
       <div class="project-group reveal">
-        <p class="project-group-label">Bioinformatics and Data</p>
+        <p class="project-group-label"># bioinformatics and data</p>
         <div class="projects-grid">
           <article class="project-card">
-            <span class="project-kicker">MATLAB / Python / Neuroscience</span>
             <h3 class="project-title">CalcCatch</h3>
-            <p class="project-desc">Developed for my MSc research to automate region-of-interest detection in calcium imaging data. Takes raw neuroscience imaging datasets, identifies active cell regions automatically, and outputs structured results that would otherwise require months of manual annotation. On a hand-annotated recording it found 59% of marked neurons, about double the standard toolbox&rsquo;s 30%.</p>
+            <span class="project-kicker">matlab &middot; python &middot; neuroscience</span>
+            <p class="project-desc">Built for my MSc research to find active neurons in calcium imaging recordings automatically. By hand that work takes months of annotation. On a hand-annotated recording it found 59% of marked neurons against the standard toolbox&rsquo;s 30%.</p>
             <div class="project-links">
-              <a href="https://github.com/SunnyS29/CalcCatch" target="_blank" rel="noopener" class="project-link">View Project</a>
+              <a href="https://github.com/SunnyS29/CalcCatch" target="_blank" rel="noopener" class="project-link">source</a>
             </div>
           </article>
 
           <article class="project-card">
-            <span class="project-kicker">Python / Molecular Diagnostics</span>
             <h3 class="project-title">Aptamer Pipeline</h3>
-            <p class="project-desc">Python pipeline for identifying candidate aptamers (short DNA sequences that bind to specific targets, used in diagnostics and biosensors) from raw HT-SELEX sequencing data. Tracks how promising sequences change across selection rounds, helping avoid candidates that only look strong at a single point.</p>
+            <span class="project-kicker">python &middot; molecular diagnostics</span>
+            <p class="project-desc">Python pipeline that picks candidate aptamers out of raw HT-SELEX sequencing data. Aptamers are short DNA sequences that bind specific targets and are used in diagnostics and biosensors. It tracks how promising sequences change across selection rounds so candidates that only look strong in a single round get filtered out.</p>
             <div class="project-links">
-              <a href="https://github.com/SunnyS29/aptamer-selex-pipeline" target="_blank" rel="noopener" class="project-link">View Project</a>
+              <a href="https://github.com/SunnyS29/aptamer-selex-pipeline" target="_blank" rel="noopener" class="project-link">source</a>
             </div>
           </article>
 
           <article class="project-card">
-            <span class="project-kicker">Python / Bioinformatics / Microbial Ecology</span>
             <h3 class="project-title">Sourdough Microbial Networks</h3>
-            <p class="project-desc">Can microbes found together in sourdough actually coexist? Benchmarks seven methods using microbial sequencing data from 500 starters against 28 lab experiments. A reproducible Python analysis that tests how well statistical predictions hold up against experimental evidence.</p>
+            <span class="project-kicker">python &middot; bioinformatics &middot; microbial ecology</span>
+            <p class="project-desc">Can microbes found together in sourdough actually coexist? Benchmarks seven methods on sequencing data from 500 starters and checks their predictions against 28 lab experiments.</p>
             <div class="project-links">
-              <a href="https://github.com/SunnyS29/sourdough-network-benchmark" target="_blank" rel="noopener" class="project-link">View Project</a>
+              <a href="https://github.com/SunnyS29/sourdough-network-benchmark" target="_blank" rel="noopener" class="project-link">source</a>
             </div>
           </article>
         </div>
       </div>
 
       <div class="project-group reveal delay-1">
-        <p class="project-group-label">Data &amp; Tools</p>
+        <p class="project-group-label"># data and tools</p>
         <div class="projects-grid">
           <article class="project-card project-card-featured">
-            <span class="project-kicker">DuckDB WASM / JavaScript / Public Data</span>
             <h3 class="project-title">Melbourne Cyclist Crash Explorer</h3>
-            <p class="project-desc">Browser-only explorer that lets you ask plain-English questions about 15,485 Melbourne cyclist crashes from 2012 to 2025. Runs SQL against a static Parquet file entirely in the browser, with direct answers, charts, and raw table output.</p>
+            <span class="project-kicker">duckdb-wasm &middot; javascript &middot; public data</span>
+            <p class="project-desc">Ask plain-English questions about 15,485 Melbourne cyclist crashes from 2012 to 2025 and get direct answers, charts and the raw table. Runs SQL on a static Parquet file entirely in your browser with no server.</p>
             <div class="project-links">
-              <a href="https://sunnys29.github.io/cyclist-crash-explorer/" target="_blank" rel="noopener" class="project-link">Live Demo</a>
-              <a href="https://github.com/SunnyS29/cyclist-crash-explorer" target="_blank" rel="noopener" class="project-link">View Code</a>
+              <a href="https://sunnys29.github.io/cyclist-crash-explorer/" target="_blank" rel="noopener" class="project-link">live demo</a>
+              <a href="https://github.com/SunnyS29/cyclist-crash-explorer" target="_blank" rel="noopener" class="project-link">source</a>
             </div>
           </article>
 
-
           <article class="project-card">
-            <span class="project-kicker">Browser Extension / JavaScript</span>
             <h3 class="project-title">BGG Price Compare AU</h3>
-            <p class="project-desc">Built because I needed it myself, this browser extension compares Australian board game prices directly on BoardGameGeek pages to make local price checking faster.</p>
+            <span class="project-kicker">browser extension &middot; javascript</span>
+            <p class="project-desc">Compares Australian board game prices right on BoardGameGeek pages so you can check local prices without leaving the page.</p>
             <div class="project-links">
-              <a href="https://chromewebstore.google.com/detail/bgg-price-compare-au/gjigggonhdkmiachkpkpcefldfenjann" target="_blank" rel="noopener" class="project-link">View on Chrome</a>
-              <a href="https://addons.mozilla.org/en-US/firefox/addon/bgg-price-compare-au/" target="_blank" rel="noopener" class="project-link">View on Firefox</a>
+              <a href="https://chromewebstore.google.com/detail/bgg-price-compare-au/gjigggonhdkmiachkpkpcefldfenjann" target="_blank" rel="noopener" class="project-link">chrome</a>
+              <a href="https://addons.mozilla.org/en-US/firefox/addon/bgg-price-compare-au/" target="_blank" rel="noopener" class="project-link">firefox</a>
             </div>
           </article>
 
           <article class="project-card">
-            <span class="project-kicker">React / Decision Framework</span>
             <h3 class="project-title">VERDICT</h3>
-            <p class="project-desc">A tool for putting numbers to a decision. Choose the features that matter, weigh their importance, and compare your options. Adjust the weights to see what changes the result.</p>
+            <span class="project-kicker">react &middot; decision framework</span>
+            <p class="project-desc">A tool for putting numbers to a decision. Choose the features that matter and weigh their importance to compare your options. Adjust the weights to see what changes the result.</p>
             <div class="project-links">
-              <a href="https://sunnysangar.com/VERDICT/index" target="_blank" rel="noopener" class="project-link">Live Demo</a>
-              <a href="https://github.com/SunnyS29/VERDICT" target="_blank" rel="noopener" class="project-link">GitHub</a>
+              <a href="https://sunnysangar.com/VERDICT/index" target="_blank" rel="noopener" class="project-link">live demo</a>
+              <a href="https://github.com/SunnyS29/VERDICT" target="_blank" rel="noopener" class="project-link">source</a>
             </div>
           </article>
-
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section glass-section" id="experience">
+  <section class="section" id="hobbies">
     <div class="container">
-      <p class="section-label reveal">Work History</p>
+      <h2 class="section-heading reveal">Off the clock</h2>
+      <ul class="ls-list reveal">
+        <!-- Edit the descriptions below to add your own specifics (favourite book, current game, usual ride...) -->
+        <li>
+          <span class="ls-name">cycling</span>
+          <span class="ls-desc">Riding around Melbourne. Also the reason the crash explorer exists.</span>
+        </li>
+        <li>
+          <span class="ls-name">board games</span>
+          <span class="ls-desc">Always hunting for the next one to play. That's how the BGG price extension happened.</span>
+        </li>
+        <li>
+          <span class="ls-name">fantasy books</span>
+          <span class="ls-desc">Usually in the middle of one. Happy to trade recommendations.</span>
+        </li>
+        <li>
+          <span class="ls-name">tennis</span>
+          <span class="ls-desc">On court when the weather allows.</span>
+        </li>
+        <li>
+          <span class="ls-name">aging biology</span>
+          <span class="ls-desc">Reading about the science of aging and biomarker tracking.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="container">
       <h2 class="section-heading reveal">Experience</h2>
       <div class="timeline">
         <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-header">
               <h3>Data Analyst</h3>
@@ -164,15 +189,14 @@
             </div>
             <span class="timeline-date">Nov 2022 – Jul 2026</span>
             <ul class="timeline-details">
-              <li>Analysed sales, pricing, and product data using SQL, Python, and Excel to identify patterns, delivering weekly reports to 5-6 stakeholders across Sales and Marketing to support commercial decisions.</li>
-              <li>Built dashboards and automated reporting workflows that cut report turnaround from around 3 hours to under 2, reducing delays by 40% and making recurring analysis faster and more reliable.</li>
-              <li>Maintained a structured product database of around 200 SKUs to improve reporting consistency and data reliability.</li>
+              <li>Analysed sales, pricing and product data in SQL, Python and Excel. Delivered weekly reports to 5–6 stakeholders across Sales and Marketing.</li>
+              <li>Built dashboards and automated reporting workflows that cut report turnaround from around 3 hours to under 2 and reduced delays by 40%.</li>
+              <li>Maintained a structured product database of around 200 SKUs to keep reporting consistent.</li>
             </ul>
           </div>
         </div>
 
         <div class="timeline-item reveal delay-1">
-          <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-header">
               <h3>Sports Officer</h3>
@@ -180,13 +204,13 @@
             </div>
             <span class="timeline-date">Feb 2025 – Jul 2025</span>
             <ul class="timeline-details">
-              <li>Coordinated logistics and equipment for community sports events to keep delivery organised and running smoothly.</li>
-              <li>Managed sports inventory and event setup in a busy residential college environment.</li>
+              <li>Coordinated logistics and equipment for community sports events.</li>
+              <li>Managed sports inventory and event setup in a busy residential college.</li>
             </ul>
           </div>
         </div>
+
         <div class="timeline-item reveal delay-2">
-          <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-header">
               <h3>Data Research Assistant</h3>
@@ -194,8 +218,8 @@
             </div>
             <span class="timeline-date">Jun 2021 – Sep 2021</span>
             <ul class="timeline-details">
-              <li>Analysed market data in Python and Excel to identify demand patterns and turn raw data into usable reporting for procurement and inventory decisions.</li>
-              <li>Built automated pipelines to consolidate data from multiple sources, saving around 3 hours of manual preparation time per cycle and improving consistency across reporting outputs.</li>
+              <li>Analysed market data in Python and Excel to find demand patterns that informed procurement and inventory decisions.</li>
+              <li>Built automated pipelines to consolidate data from multiple sources. Saved around 3 hours of manual preparation per cycle.</li>
             </ul>
           </div>
         </div>
@@ -205,7 +229,6 @@
 
   <section class="section" id="education">
     <div class="container">
-      <p class="section-label reveal">Academic Background</p>
       <h2 class="section-heading reveal">Education</h2>
       <div class="education-grid">
         <article class="education-card reveal">
@@ -213,8 +236,8 @@
           <div class="education-school">University of Melbourne</div>
           <div class="education-date">2023 – 2025</div>
           <ul class="education-details">
-            <li>Thesis: Reconstructed neuronal network connectivity from enteric nervous system calcium-imaging recordings using graph theory, transfer entropy, and statistical modelling.</li>
-            <li>Key Coursework: Machine Learning, Database Systems, Advanced Programming, Statistical Analysis.</li>
+            <li>Thesis: Reconstructed neuronal network connectivity from enteric nervous system calcium-imaging recordings using graph theory, transfer entropy and statistical modelling.</li>
+            <li>Coursework: Machine Learning, Database Systems, Advanced Programming, Statistical Analysis.</li>
           </ul>
         </article>
 
@@ -223,7 +246,7 @@
           <div class="education-school">University of Dundee</div>
           <div class="education-date">2018 – 2022</div>
           <ul class="education-details">
-            <li>Biochemistry and statistics coursework with a strong focus on modelling complex biological data.</li>
+            <li>Coursework in biochemistry and statistics with a focus on modelling biological data.</li>
             <li>Used SQL to manage and query proteomic datasets.</li>
           </ul>
         </article>
@@ -233,86 +256,42 @@
         <h3 class="certifications-heading reveal" id="certifications-heading">Certifications &amp; Training</h3>
         <ul class="certification-list">
           <li class="certification-item reveal">
-            <div>
-              <h4 class="certification-title">ICH Good Clinical Practice E6(R3)</h4>
-              <p class="certification-issuer">Global Health Training Centre</p>
-              <p class="certification-date">Completed September 2026</p>
-            </div>
+            <h4 class="certification-title">ICH Good Clinical Practice E6(R3)</h4>
+            <p class="certification-issuer">Global Health Training Centre &middot; <span class="certification-date">Sep 2026</span></p>
           </li>
           <li class="certification-item reveal">
-            <div>
-              <h4 class="certification-title">Google Data Analytics Certificate</h4>
-              <p class="certification-issuer">Google</p>
-              <p class="certification-date">Completed November 2022</p>
-            </div>
+            <h4 class="certification-title">Google Data Analytics Certificate</h4>
+            <p class="certification-issuer">Google &middot; <span class="certification-date">Nov 2022</span></p>
           </li>
           <li class="certification-item certification-item-minor reveal">
-            <div>
-              <h4 class="certification-title">Building with the Claude API</h4>
-              <p class="certification-issuer">Anthropic</p>
-              <p class="certification-date">Completed May 2026</p>
-            </div>
+            <h4 class="certification-title">Building with the Claude API</h4>
+            <p class="certification-issuer">Anthropic &middot; <span class="certification-date">May 2026</span></p>
           </li>
           <li class="certification-item certification-item-minor reveal">
-            <div>
-              <h4 class="certification-title">Claude Code in Action</h4>
-              <p class="certification-issuer">Anthropic</p>
-              <p class="certification-date">Completed May 2026</p>
-            </div>
+            <h4 class="certification-title">Claude Code in Action</h4>
+            <p class="certification-issuer">Anthropic &middot; <span class="certification-date">May 2026</span></p>
           </li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section class="section glass-section" id="contact">
+  <section class="section" id="contact">
     <div class="container">
-      <p class="section-label reveal">Connect</p>
-      <h2 class="section-heading reveal">Get in touch</h2>
+      <h2 class="section-heading reveal">Get in touch!</h2>
       <div class="contact-panel reveal delay-1">
-        <a href="https://www.linkedin.com/in/sunny-sangar-290476180/" target="_blank" rel="noopener" class="contact-link">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" aria-hidden="true">
-            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 10-4 0v7h-4v-7a6 6 0 016-6z"/>
-            <rect x="2" y="9" width="4" height="12"/>
-            <circle cx="4" cy="4" r="2"/>
-          </svg>
-          LinkedIn
-        </a>
-        <a href="https://github.com/SunnyS29" target="_blank" rel="noopener" class="contact-link">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
-            <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12 24 5.373 18.627 0 12 0z"/>
-          </svg>
-          GitHub
-        </a>
-        <a href="mailto:sunnysangar29@gmail.com?subject=Hello%20Sunny" class="contact-link">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" aria-hidden="true">
-            <path d="M12 20h9"/>
-            <path d="M16.5 3.5a2.121 2.121 0 113 3L7 19l-4 1 1-4 12.5-12.5z"/>
-          </svg>
-          Email Me · sunnysangar29@gmail.com
-        </a>
-        <a href="assets/Sunny_Sangar_CV.pdf?v=2" class="contact-link" download="Sunny_Sangar_CV.pdf">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" aria-hidden="true">
-            <path d="M12 3v12"/>
-            <path d="M7 10l5 5 5-5"/>
-            <path d="M4 19h16"/>
-          </svg>
-          Download CV (PDF)
-        </a>
-        <p class="contact-location">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" aria-hidden="true">
-            <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-            <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-          </svg>
-          Melbourne, AU
-        </p>
+        <a href="mailto:sunnysangar29@gmail.com?subject=Hello%20Sunny" class="contact-link"><span class="key">email</span> sunnysangar29@gmail.com</a>
+        <a href="https://www.linkedin.com/in/sunny-sangar-290476180/" target="_blank" rel="noopener" class="contact-link"><span class="key">linkedin</span> in/sunny-sangar</a>
+        <a href="https://github.com/SunnyS29" target="_blank" rel="noopener" class="contact-link"><span class="key">github</span> SunnyS29</a>
+        <a href="assets/Sunny_Sangar_CV.pdf?v=2" class="contact-link" download="Sunny_Sangar_CV.pdf"><span class="key">cv</span> Sunny_Sangar_CV.pdf</a>
       </div>
     </div>
   </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
-      <p>Sunny Sangar &middot; 2026</p>
+      <p class="footer-dim">Sunny Sangar &middot; 2026</p>
     </div>
   </footer>
 

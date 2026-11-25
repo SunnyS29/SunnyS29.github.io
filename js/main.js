@@ -71,6 +71,13 @@
     });
   }
 
+  // A hello for anyone who opens devtools.
+  console.log(
+    "%c~$ whoami\n%cSunny Sangar. If you're reading this, we'd probably get along: sunnysangar.com/#contact",
+    "color:#9bd36a;font-family:monospace;font-size:13px",
+    "color:#ffb000;font-family:monospace;font-size:13px"
+  );
+
   const sections = document.querySelectorAll("section[id]");
 
   if ("IntersectionObserver" in window && navLinks) {
