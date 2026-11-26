@@ -489,13 +489,23 @@ ul {
 /* ---------- projects ---------- */
 
 .project-group + .project-group {
-  margin-top: 44px;
+  margin-top: 60px;
 }
 
+/* group label reads as a divider: text, then a dashed rule across the width */
 .project-group-label {
-  color: var(--dim);
-  font-size: 14px;
-  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.project-group-label::after {
+  content: "";
+  flex: 1;
+  border-top: 1px dashed var(--line-strong);
 }
 
 .projects-grid {
